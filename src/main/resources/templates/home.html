@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <style>
+        .textbg {
+            background: linear-gradient(to bottom right, #FFFFFF 0%, #C0C0C0 20%, #572D8B 50%) bottom right / 50% 50% no-repeat,
+            linear-gradient(to bottom left, #FFFFFF 0%, #C0C0C0 20%, #572D8B 50%) bottom left / 50% 50% no-repeat,
+            linear-gradient(to top left, #FFFFFF 0%, #C0C0C0 20%, #572D8B 50%) top left / 50% 50% no-repeat,
+            linear-gradient(to top right, #FFFFFF 0%, #C0C0C0 20%, #572D8B 50%) top right / 50% 50% no-repeat;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<div class="flex flex-col bg-gradient-to-br to-black_end from-lightblack via-90% p-5">
+    <div class="flex flex-row px-[65px] py-[50px]">
+        <p class="text-3xl font-extrabold text-white ">Hyphestus Robotics</p>
+        <div class="flex flex-row w-full justify-between items-center">
+            <div class="flex flex-row space-x-3 text-white font-extrabold">
+                <p>Sponsors</p>
+                <p>About</p>
+                <p>The projects</p>
+                <p>The team</p>
+            </div>
+            <p class="cursor-pointer bg-white rounded-lg py-[15px] px-[35px] text-black_end font-extrabold shadow-2xl shadow-white">
+                Login</p>
+        </div>
+    </div>
+
+    <div class="flex flex-row py-[50px] px-[65px]">
+
+        <div class="flex flex-col w-1/2 items-center justify-center">
+            <img src="/images/hyphestusbg.png" alt="logo" class="w-[350px] h-[350px]"/>
+        </div>
+
+        <div class="flex flex-col items-center w-1/2 justify-center text-2xl text-white font-extrabold textbg">
+            <div class="flex flex-col max-w-[350px] text-center items-center justify-center w-full">
+                <p>The innovating University robotics team</p>
+                <p>in Greece</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="flex flex-col items-center justify-center py-[50px] space-y-2">
+        <p class="text-3xl text-white font-extrabold">Sponsors</p>
+        <div class="grid grid-cols-3 w-full py-[50px] px-[65px] max-w-[700px] gap-10 content-center">
+            <div class="flex flex-col w-[150px] h-[150px] rounded-full border-2 border-black items-center justify-center text-black text-2xl
+                hover:shadow-2xl hover:shadow-white hover:border-white hover:text-white cursor-pointer">
+                <img src="/images/novidea.png" alt="novideaLogo" class="w-[50px] h-[50px]"/>
+            </div>
+            <div class="flex flex-col w-[150px] h-[150px] rounded-full border-2 border-black items-center justify-center text-black text-2xl
+                    hover:shadow-2xl hover:shadow-white hover:border-white hover:text-white cursor-pointer">
+                <p>+</p>
+            </div>
+            <div class="flex flex-col w-[150px] h-[150px] rounded-full border-2 border-black items-center justify-center text-black text-2xl
+                    hover:shadow-2xl hover:shadow-white hover:border-white hover:text-white cursor-pointer">
+                <p>+</p>
+            </div>
+            <div></div>
+            <div class="flex flex-col w-[150px] h-[150px] rounded-full border-2 border-black items-center justify-center text-black text-2xl
+                    hover:shadow-2xl hover:shadow-white hover:border-white hover:text-white cursor-pointer">
+                <p>+</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
